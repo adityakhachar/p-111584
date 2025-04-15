@@ -18,31 +18,31 @@ export const Header: React.FC = () => {
     <nav className="flex items-center gap-[40px] text-lg text-[rgba(35,31,32,1)] font-normal flex-wrap my-auto max-lg:flex-col max-lg:items-start max-lg:gap-6">
       <a 
         href="#about" 
-        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B] hover:underline"
+        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B]"
       >
         About Us
       </a>
       <a 
         href="#services" 
-        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B] hover:underline"
+        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B]"
       >
         Services
       </a>
       <a 
         href="#solutions" 
-        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B] hover:underline"
+        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B]"
       >
         Solutions
       </a>
       <a 
         href="#careers" 
-        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B] hover:underline"
+        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B]"
       >
         Careers
       </a>
       <a 
         href="#insights" 
-        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B] hover:underline"
+        className="self-stretch my-auto text-[rgba(35,31,32,1)] transition-colors duration-300 hover:text-[#EB008B]"
       >
         Insights
       </a>
