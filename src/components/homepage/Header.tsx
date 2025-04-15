@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Menu, Search } from "lucide-react";
 import {
@@ -16,19 +15,19 @@ export const Header: React.FC = () => {
 
   const NavLinks = () => (
     <nav className="flex items-center gap-[40px] text-lg text-[rgba(35,31,32,1)] font-normal flex-wrap my-auto max-lg:flex-col max-lg:items-start max-lg:gap-6">
-      <a href="#about" className="self-stretch my-auto hover:underline">
+      <a href="#about" className="self-stretch my-auto hover:text-[#EB008B] hover:underline">
         About Us
       </a>
-      <a href="#services" className="self-stretch my-auto hover:underline">
+      <a href="#services" className="self-stretch my-auto hover:text-[#EB008B] hover:underline">
         Services
       </a>
-      <a href="#solutions" className="self-stretch my-auto hover:underline">
+      <a href="#solutions" className="self-stretch my-auto hover:text-[#EB008B] hover:underline">
         Solutions
       </a>
-      <a href="#careers" className="self-stretch my-auto hover:underline">
+      <a href="#careers" className="self-stretch my-auto hover:text-[#EB008B] hover:underline">
         Careers
       </a>
-      <a href="#insights" className="self-stretch my-auto hover:underline">
+      <a href="#insights" className="self-stretch my-auto hover:text-[#EB008B] hover:underline">
         Insights
       </a>
     </nav>
