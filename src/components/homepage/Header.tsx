@@ -6,13 +6,16 @@ import {
   DrawerContent,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useIsMobile, useIsTablet } from "@/hooks/use-mobile";
 
 export const Header: React.FC = () => {
   const isMobile = useIsMobile();
+  const isTablet = useIsTablet();
+  const shouldUseCompactNav = isMobile || isTablet;
 
   const NavLinks = () => (
-    <nav className="flex items-center gap-[40px] text-lg text-[rgba(35,31,32,1)] font-normal flex-wrap my-auto max-md:flex-col max-md:items-start max-md:gap-6">
+    <nav className="flex items-center gap-[40px] text-lg text-[rgba(35,31,32,1)] font-normal flex-wrap my-auto max-lg:flex-col max-lg:items-start max-lg:gap-6">
       <a href="#about" className="self-stretch my-auto hover:underline">
         About Us
       </a>
@@ -71,6 +74,20 @@ export const Header: React.FC = () => {
               </div>
             </DrawerContent>
           </Drawer>
+        ) : isTablet ? (
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="p-2 hover:bg-gray-100 rounded-lg">
+                <Menu className="h-6 w-6" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px]">
+              <div className="pt-10 flex flex-col gap-6">
+                <NavLinks />
+                <ActionButtons />
+              </div>
+            </SheetContent>
+          </Sheet>
         ) : (
           <>
             <NavLinks />
